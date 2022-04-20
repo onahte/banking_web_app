@@ -1,4 +1,4 @@
-name: Development Workflow 3.8
+name: Development
 
 on:
   pull_request:
