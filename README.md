@@ -4,6 +4,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/onahte/final_flask_auth?style=plastic)
 ![Contributors](https://img.shields.io/github/contributors/onahte/final_flask_auth?style=plastic)
 ![Pull Requests](https://img.shields.io/github/issues-pr/onahte/final_flask_auth?style=plastic)
+
 This app uses containerization and SQLAlchemy to convert a CSV of financial transactions to SQL, 
 which can then be viewed by logging into the webapp. SQL is implemented to store the transactional 
 data as well as user login information. Logging has also been enabled using Python's built-in 
