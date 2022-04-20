@@ -1,4 +1,4 @@
-(https://img.shields.io/github/languages/count/onahte/final_flask_auth?style=plastic) (https://img.shields.io/github/directory-file-count/onahte/final_flask_auth?style=plastic)
+![Languages](https://img.shields.io/github/languages/count/onahte/final_flask_auth?style=plastic) ![File Count](https://img.shields.io/github/directory-file-count/onahte/final_flask_auth?style=plastic)
 
 # Project Setup
 
