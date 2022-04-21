@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     {% block head %}
         <!-- Required meta tags -->
@@ -10,23 +11,22 @@
             <!-- Bootstrap CSS -->
             {{ bootstrap.load_css() }}
         {% endblock %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-        <title>My Site - {% block title %}{% endblock %}</title>
+        <title>Bank of Ethan - {% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
 <body>
-<div class="container">
 
+<div class="container">
     <div class="row">
         <header class="mb-2">
             {% from 'bootstrap5/nav.html' import render_nav_item %}
             {% from 'bootstrap5/utils.html' import render_messages %}
             {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light shadow px-md-3 mb-3">
                 <a class="navbar-brand ml-5">
-                    <img src="{{ url_for('static', filename='images/bankofethan.svg') }}" height="45" alt="" >
+                    <img src="{{ url_for('static', filename='images/bankofethan_horizontal.svg') }}" height="45" alt="" >
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -46,7 +46,6 @@
                         {% endif %}
 
                         {{ render_nav_item('simple_pages.about','About') }}
-                        {{ render_nav_item('simple_pages.welcome','Welcome') }}
                     </div>
                 </div>
                 <div class="navbar-nav d-flex">
@@ -78,6 +77,7 @@
 
         {% block content %}
         {% endblock %}
+
     </div>
 </div>
 
@@ -86,7 +86,7 @@
     {{ bootstrap.load_js() }}
 {% endblock %}
 <footer class="text-center mt-5">
-    Environment: {{ deployment_environment }} - Copyright: {{ year }} {{ format_price(100) }}
+    <p>&#169; Copyright: {{ year }} Ethan Oh &middot; <a href="mailto:eo238@njit.com">Contact</a></p>
 </footer>
 </body>
 </html>

@@ -1,15 +1,24 @@
 from datetime import datetime
 
+from sqlalchemy.orm import relationship
 from werkzeug.security import check_password_hash, generate_password_hash
 from app.db import db
 from flask_login import UserMixin
+
+
+# class Financial(db.Model):
+#     __tablename__ = 'financials'
+#     id = db.Column(db.Integer, primary_key=True)
+#     transaction = db.Column(db.String(300), nullable=True, unique=False)
+#     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+#     user = relationship("User", back_populates="financials")
 
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(120), unique=True, nullable=False)
+    email = db.Column(db.String(120), nullable=False, unique=True)
     password = db.Column(db.String(300), nullable=False, unique=True)
     about = db.Column(db.String(300), nullable=True, unique=False)
     authenticated = db.Column(db.Boolean, default=False)
