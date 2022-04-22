@@ -85,3 +85,7 @@
 2022-04-22 01:25:22,304 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 01:25:22] "[36mGET /static/images/bankofethan_horizontal.svg HTTP/1.1[0m" 304 -
 2022-04-22 01:25:25,090 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 01:25:25] "GET /dashboard HTTP/1.1" 200 -
 2022-04-22 01:25:25,125 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 01:25:25] "[36mGET /static/images/bankofethan_horizontal.svg HTTP/1.1[0m" 304 -
+2022-04-22 01:29:51,608 [INFO] werkzeug:  * Detected change in '/home/myuser/app/db/models/__init__.py', reloading
+2022-04-22 01:30:10,865 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 01:30:10] "GET /dashboard HTTP/1.1" 200 -
+2022-04-22 01:30:10,921 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 01:30:10] "[36mGET /static/images/bankofethan_horizontal.svg HTTP/1.1[0m" 304 -
+2022-04-22 01:31:42,441 [INFO] werkzeug:  * Detected change in '/home/myuser/app/db/models/__init__.py', reloading
