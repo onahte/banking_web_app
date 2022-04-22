@@ -7,8 +7,8 @@ from click.testing import CliRunner
 runner = CliRunner()
 root = os.path.dirname(os.path.abspath(__file__))
 
-def test_create_log():
-    response = runner.invoke(create_log_folder)
+def test_create_logs():
+    response = runner.invoke(create_logs)
     assert response.exit_code == 0
     logdir = os.path.join(root, '../app/logs')
     response = os.path.exists(logdir)

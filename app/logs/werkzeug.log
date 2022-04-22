@@ -33,3 +33,7 @@
 2022-04-22 00:37:21,289 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 00:37:21] "GET / HTTP/1.1" 200 -
 2022-04-22 00:37:21,357 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 00:37:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2022-04-22 00:37:21,375 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 00:37:21] "[36mGET /static/images/bankofethan.svg HTTP/1.1[0m" 304 -
+2022-04-22 00:38:28,899 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 00:38:28] "GET /register?page=Register HTTP/1.1" 200 -
+2022-04-22 00:38:29,119 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 00:38:29] "GET /static/images/bankofethan_horizontal.svg HTTP/1.1" 200 -
+2022-04-22 00:38:29,174 [INFO] werkzeug: 172.20.0.1 - - [22/Apr/2022 00:38:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-04-22 00:59:03,292 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/click_test.py', reloading
