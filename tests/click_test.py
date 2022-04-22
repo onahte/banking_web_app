@@ -1,7 +1,7 @@
 """Tests creation of log dir"""
 import os
 
-from app import create_log_folder, create_database
+from app import create_logs, create_database
 from click.testing import CliRunner
 
 runner = CliRunner()
