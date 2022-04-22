@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <main>
-        <div id="myCarousel" class="carousel slide pb-4 mb-5" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="surf"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="4x4"></button>
@@ -12,8 +12,9 @@
                     <img src="{{ url_for('static', filename='images/banner_barrel.jpg') }}">
                     <div class="container">
                         <div class="carousel-caption text-start">
+                            <img src="{{ url_for('static', filename='images/griffin_seal.svg') }}" height="150">
                             <h1 class="text-light">Mitigate Risk. Maximize Rewards</h1>
-                            <p class="text-light">
+                            <p class="text-light pb-3">
                                 Investing can be risk-laden, but with the right experience <br>
                                 and skill, it can be exhilarating. Let Bank of Ethan show <br>
                                 you our full suite of capabilities.
@@ -26,9 +27,10 @@
                     <img src="{{ url_for('static', filename='images/climb.jpg') }}">
                     <div class="container">
                         <div class="carousel-caption text-start">
+                            <img src="{{ url_for('static', filename='images/griffin_seal.svg') }}" height="150">
                             <h1>You're Never Alone.</h1>
-                            <p>When you bank with the Griffin, you never bank alone.<br>
-                                 We're with you at every step of every journey.<br><br>
+                            <p class="pb-5">When you bank with the Griffin, you never bank alone.<br>
+                                 We're with you at every step of every journey.
                             </p>
                         </div>
                     </div>
@@ -38,7 +40,8 @@
                         <img src="{{ url_for('static', filename='images/banner_family.jpg') }}">
                     <div class="container">
                         <div class="carousel-caption text-start">
-                            <h1 class="text-light">You're Financial Freedom <br>is Never Just Yours.</h1>
+                            <img src="{{ url_for('static', filename='images/griffin_seal.svg') }}" height="150">
+                            <h1 class="text-light">Your Financial Freedom <br>is Never Just Yours.</h1>
                             <p class="text-light">Let us help you build the freedom you've always <br>
                                 wanted for yourself... and for your family.
                             </p>
@@ -63,10 +66,11 @@
                     <p class="lead">
                         Building on top of our past projects, this capstone web app ties together all the
                         technologies covered in class. The objectives were to implement Docker, Flask,
-                        Bootstrap, SQLAlchemy and Python and serve a web app on Heroku that allows users to
-                        create accounts, upload and upload/view sample CSV formatted financial statements.
-                        Critical backend pieces of this project was building out the logging functions and the
-                        automated testing.
+                        Bootstrap, SQLAlchemy and Python and serve a containerized web app on Heroku that allows users
+                        to create accounts and upload/view sample CSV formatted financial statements.
+                        Critical backend pieces of this project were building out the logging functions and the
+                        automated testing. And as with our previous projects, Github actions were used to build our
+                        automated CI/CD pipeline.
                     </p>
                 </div>
                 <div class="col-md-5">
