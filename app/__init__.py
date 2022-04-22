@@ -13,6 +13,8 @@ from .simple_pages import simple_pages
 from .error_handlers import error_handlers
 from .auth import auth
 from .context_processors import utility_text_processors
+from .error_handlers import error_handlers
+from .logging_config import log_con
 
 login_manager = flask_login.LoginManager()
 
@@ -22,16 +24,27 @@ def page_not_found(e):
 def create_app():
     """Create and configure an instance of the Flask application."""
     app = Flask(__name__)
+
+    if app.config["ENV"] == "production":
+        app.config.from_object("app.config.ProductionConfig")
+    elif app.config["ENV"] == "development":
+        app.config.from_object("app.config.DevelopmentConfig")
+    elif app.config["ENV"] == "testing":
+        app.config.from_object("app.config.TestingConfig")
+
     app.secret_key = 'This is an INSECURE secret!! DO NOT use this in production!!'
     login_manager.init_app(app)
     login_manager.login_view = "auth.login"
+
     csrf = CSRFProtect(app)
     bootstrap = Bootstrap5(app)
+
     app.register_blueprint(simple_pages)
     app.register_blueprint(error_handlers)
     app.register_blueprint(auth)
+    app.register_blueprint(log_con)
     app.context_processor(utility_text_processors)
-    # add command function to cli commands
+
     app.cli.add_command(create_database)
     app.cli.add_command(create_logs)
 

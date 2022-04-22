@@ -124,7 +124,7 @@ LOGGING_CONFIG = {
             'level': 'INFO',
             'propagate': False
         },
-        'myApp': {  # if __name__ == '__main__'
+        'general': {  # if __name__ == '__main__'
             'handlers': ['file.handler.general'],
             'level': 'DEBUG',
             'propagate': False
