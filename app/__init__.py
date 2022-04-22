@@ -31,7 +31,7 @@ def create_app():
     elif app.config["ENV"] == "testing":
         app.config.from_object("app.config.TestingConfig")
 
-    app.secret_key = 'This is an INSECURE secret!! DO NOT use this in production!!'
+    app.secret_key = '4xfd{Hxxe5<we95p0bf9WWeu4x96e59236xne1O<!oe976xckswa0pp9fRqqu11nmx8'
     login_manager.init_app(app)
     login_manager.login_view = "auth.login"
 
