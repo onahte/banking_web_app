@@ -1,8 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
     {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
-    <div id="row">
-    <h2>Dashboard</h2>
-    <p>Welcome: {{ current_user.email }}</p>
-    </div>
+    <div class="container col-xxl">
+            <div class="row mb-5">
+                <div class="col-10 col-sm-8 col-lg-3">
+                    <img src="{{ url_for('static', filename='images/momchild-green.jpg') }}"
+                         class="d-block mx-lg-auto img-fluid shadow" alt="BOE"
+                         width="400" height="700"
+                         loading="lazy">
+                </div>
+                <div class="col-lg-9">
+                    <h2 class="fw-bold lh-1 mb-3">Dashboard</h2>
+                    <hr class="featurette-divider">
+                    <p>Welcome: {{ current_user.email }}</p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
 {% endblock %}

@@ -1,5 +1,106 @@
 {% extends "base.html" %}
 {% block content %}
+<main>
+        <div id="myCarousel" class="carousel slide pb-4 mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="surf"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="4x4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="family"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='images/banner_barrel.jpg') }}">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="text-light">Mitigate Risk. Maximize Rewards</h1>
+                            <p class="text-light">
+                                Investing can be risk-laden, but with the right experience <br>
+                                and skill, it can be exhilarating. Let Bank of Ethan show <br>
+                                you our full suite of capabilities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='images/banner_4x4.jpg') }}">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>You're Never Alone.</h1>
+                            <p>When you bank with the Griffin, you never bank alone.<br>
+                                 We're with you at every step of every journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                        <img src="{{ url_for('static', filename='images/banner_family.jpg') }}">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="text-light">You're Financial Freedom <br>is Never Just Yours.</h1>
+                            <p class="text-light">Let us help you build the freedom you've always <br>
+                                wanted for yourself... and for your family.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container col-xxl-8">
+            <div class="row featurette  d-flex align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="fw-bold lh-1 mb-3">Project Outline</h2>
+                    <p class="lead">
+                        Building on top of our past projects, this capstone web app ties together all the
+                        technologies covered in class. The objectives were to implement Docker, Flask,
+                        Bootstrap, SQLite and Python and serve a web app on Heroku that allows users to
+                        create accounts, upload and upload/view sample CSV formatted financial statements.
+                        Critical backend pieces of this project was building out the logging functions and the
+                        automated testing.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="{{ url_for('static', filename='images/bankofethan.svg') }}"
+                     class="img-fluid  mb-4" alt="Team" width="375" height="150"
+                     loading="lazy">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </div>
+                    <div class="container col-xxl-8">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-5">
+                    <img src="{{ url_for('static', filename='images/ironman.png') }}"
+                         class="d-block mx-lg-auto img-fluid" alt="Ethan"
+                         width="300" height="300" loading="lazy">
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="fw-bold lh-1 mb-3">Project Creator</h2>
+                    <p class="lead">
+                        Hi and welcome! My name is Ethan and I am a candidate for MS in Computer Science at NJIT. I am
+                        an aspiring DevOps Engineer that's currently working as a Junior Networking Engineer for a
+                        Fortune 500 company. Before making the jump to tech, I was a chef with stints at Thomas Keller's
+                        Per Se, Noma in Copenhagen and at Iron Chef Morimoto's NYC namesake restaurant. I love
+                        artisanal coffee and staying active. Here's me about to warm-up for my first Iron Man in
+                        Mt Tremblant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+        <hr class="featurette-divider">
+    </div>
+
+    </main>
 
 {% endblock %}

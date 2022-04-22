@@ -1,8 +1,7 @@
 """A simple flask web app"""
 import os
 import flask_login
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from flask_wtf.csrf import CSRFProtect
 
