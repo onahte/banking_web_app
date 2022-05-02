@@ -1,17 +1,24 @@
+import os
+
 from flask import Blueprint, render_template, redirect, url_for, flash,current_app
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
 
 from .decorators import admin_required
 from .forms import login_form, register_form, profile_form, security_form, user_edit_form
-from ..db import db
-from ..db.models import User
+from app.db import db
+from app.db.models import User
+from app import config
 
 auth = Blueprint('auth', __name__, template_folder='templates')
 
+dbdir = os.path.join(config.Config.BASE_DIR, '..', config.Config.DB_DIR)
 
 @auth.route('/register', methods=['POST', 'GET'])
 def register():
+    if not os.path.exists(dbdir):
+        os.mkdir(dbdir)
+        db.create_all()
     if current_user.is_authenticated:
         return redirect(url_for('auth.dashboard'))
     form = register_form()
@@ -34,6 +41,9 @@ def register():
 
 @auth.route('/login', methods=['POST', 'GET'])
 def login():
+    if not os.path.exists(dbdir):
+        os.mkdir(dbdir)
+        db.create_all()
     form = login_form()
     if current_user.is_authenticated:
         return redirect(url_for('auth.dashboard'))
@@ -57,8 +67,6 @@ def logout():
     """Logout the current user."""
     user = current_user
     user.authenticated = False
-    db.session.add(user)
-    db.session.commit()
     logout_user()
     return redirect(url_for('auth.login'))
 
@@ -76,7 +84,7 @@ def edit_profile():
     form = profile_form(obj=user)
     if form.validate_on_submit():
         user.about = form.about.data
-        db.session.add(current_user)
+        #db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Profile', 'success')
         return redirect(url_for('auth.dashboard'))
@@ -90,15 +98,13 @@ def edit_account():
     if form.validate_on_submit():
         user.email = form.email.data
         user.password = form.password.data
-        db.session.add(current_user)
+        #db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Password or Email', 'success')
         return redirect(url_for('auth.dashboard'))
     return render_template('manage_account.html', form=form)
 
 
-
-#You should probably move these to a new Blueprint to clean this up.  These functions below are for user management
 
 @auth.route('/users')
 @login_required
@@ -132,7 +138,7 @@ def edit_user(user_id):
     if form.validate_on_submit():
         user.about = form.about.data
         user.is_admin = int(form.is_admin.data)
-        db.session.add(user)
+        #db.session.add(user)
         db.session.commit()
         flash('User Edited Successfully', 'success')
         current_app.logger.info("edited a user")
@@ -169,3 +175,13 @@ def delete_user(user_id):
     db.session.commit()
     flash('User Deleted', 'success')
     return redirect(url_for('auth.browse_users'), 302)
+
+
+@auth.route('/logs')
+@login_required
+def logs():
+    logfile = os.path.join(config.Config.LOG_DIR, 'general.log')
+    with open(logfile,'r') as f:
+        data = f.read()
+    f.close()
+    return render_template('logs.html', text=data)

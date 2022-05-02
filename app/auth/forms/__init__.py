@@ -31,10 +31,12 @@ class register_form(FlaskForm):
 
 
 class profile_form(FlaskForm):
+    file = FileField()
     about = TextAreaField('About', [validators.length(min=6, max=300)],
                           description="Please add information about yourself")
 
     submit = SubmitField()
+
 
 class user_edit_form(FlaskForm):
     about = TextAreaField('About', [validators.length(min=6, max=300)],
@@ -57,3 +59,5 @@ class security_form(FlaskForm):
     confirm = PasswordField('Repeat Password', description="Please retype your password to confirm it is correct")
 
     submit = SubmitField("Update")
+
+

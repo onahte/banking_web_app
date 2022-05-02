@@ -1,81 +1,94 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        {% block head %}
-            <!-- Required meta tags -->
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    {% block head %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            {% block styles %}
-                {{ bootstrap.load_css() }}
-            {% endblock %}
-
-            <title>Bank of Ethan{% block title %}{% endblock %}</title>
+        {% block styles %}
+            {{ bootstrap.load_css() }}
         {% endblock %}
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <header>
-                    {% from 'bootstrap5/nav.html' import render_nav_item %}
-                    {% from 'bootstrap5/utils.html' import render_messages %}
-                    {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-                        <a class="navbar-brand ml-5">
-                            <img src="{{ url_for('static', filename='images/bankofethan_horizontal.svg') }}" height="45" alt="" >
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <div class="navbar-nav mr-auto">
-                                {{ render_nav_item('simple_pages.index', 'Home') }}
-                                {% if current_user.is_authenticated %}
-                                    {{ render_nav_item('auth.dashboard','Dashboard' ) }}
-                                    {% if current_user.is_admin %}
-                                        {{ render_nav_item('auth.browse_users','User Management' ) }}
-                                    {% endif %}
-                                {% endif %}
-                                {{ render_nav_item('simple_pages.about','About') }}
-                            </div>
-                        </div>
-                        <div class="navbar-nav d-flex">
-                            {% if current_user.is_authenticated %}
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                       data-bs-toggle="dropdown" aria-expanded="false">
-                                        My Account
-                                    </a>
-                                    <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="{{ url_for("auth.edit_profile") }}">Manage Profile</a></li>
-                                        <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage Account</a></li>
-                                        <li><a class="dropdown-item" href="{{ url_for("auth.logout") }}">Logout</a></li>
-                                    </ul>
-                                </li>
-                            {% else %}
-                                {{ render_nav_item('auth.register','Register' ) }}
-                                {{ render_nav_item('auth.login','Login' ) }}
+
+        <title>Bank of Ethan{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    {% endblock %}
+</head>
+<body>
+<div class="container">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <div class="row">
+        <header class="mb-2 type">
+            {% from 'bootstrap5/nav.html' import render_nav_item %}
+            {% from 'bootstrap5/utils.html' import render_messages %}
+            {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+                <a class="navbar-brand ml-5">
+                    <img src="{{ url_for('static', filename='images/bankofethan_horizontal.svg') }}" height="45" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="navbar-nav mr-auto">
+                        {{ render_nav_item('simple_pages.index', 'Home') }}
+                        {% if current_user.is_authenticated %}
+                            {{ render_nav_item('auth.dashboard','Dashboard' ) }}
+                            {{ render_nav_item('auth.logs','Logs' ) }}
+                            {% if current_user.is_admin %}
+                                {{ render_nav_item('auth.browse_users','User Management' ) }}
                             {% endif %}
-                        </div>
-                    </nav>
-                </header>
-            </div>
-            <div class="row">
-                {{ render_messages() }}
-            </div>
-            <div class="row mt-5">
-                {% block content %}
-                {% endblock %}
-            </div>
-        </div>
-
-        {% block scripts %}
-            {{ bootstrap.load_js() }}
+                        {% endif %}
+                        {{ render_nav_item('simple_pages.about','About') }}
+                    </div>
+                </div>
+                <div class="navbar-nav d-flex">
+                    {% if current_user.is_authenticated %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="{{ url_for('static', filename='images/profile/'+ current_user.user_image ) }}"
+                                     height="35" class="rounded-circle"> My Account
+                            </a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{ url_for("auth.edit_profile") }}">Manage
+                                    Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage
+                                    Account</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for("transactions.transactions_browse") }}">Transactions</a>
+                                </li>
+                                {% if current_user.is_admin %}
+                                    <li><a class="dropdown-item" href="{{ url_for("auth.browse_users") }}">User Mgmt</a>
+                                    </li>
+                                {% endif %}
+                                <li><a class="dropdown-item" href="{{ url_for("auth.logout") }}">Logout</a></li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        {{ render_nav_item('auth.register','Register' ) }}
+                        {{ render_nav_item('auth.login','Login' ) }}
+                    {% endif %}
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="row">
+        {{ render_messages() }}
+    </div>
+    <div class="row mt-5">
+        {% block content %}
         {% endblock %}
+    </div>
+    <hr class="featurette-divider">
+</div>
 
-        <footer class="text-center">
-            <p>&#169; Copyright: {{ year }} Ethan Oh &middot; <a href="mailto:eo238@njit.com">Contact</a></p>
-        </footer>
-    </body>
+{% block scripts %}
+    {{ bootstrap.load_js() }}
+{% endblock %}
+
+<footer class="text-center">
+    <p>&#169; Copyright: {{ year }} Ethan Oh &middot; <a href="mailto:eo238@njit.com">Contact</a></p>
+</footer>
+</body>
 </html>

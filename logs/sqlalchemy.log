@@ -1,0 +1,1050 @@
+2022-05-02 16:59:17,742 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 16:59:17,743 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 16:59:17,745 [INFO] sqlalchemy.engine.Engine: [generated in 0.00139s] (2,)
+2022-05-02 16:59:19,970 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 16:59:19,978 [INFO] sqlalchemy.engine.Engine: [cached since 2.234s ago] (2,)
+2022-05-02 16:59:20,828 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 16:59:20,834 [INFO] sqlalchemy.engine.Engine: [cached since 3.09s ago] (2,)
+2022-05-02 16:59:33,288 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 16:59:33,299 [INFO] sqlalchemy.engine.Engine: [cached since 15.56s ago] (2,)
+2022-05-02 17:00:00,154 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:00:00,171 [INFO] sqlalchemy.engine.Engine: [cached since 42.42s ago] (2,)
+2022-05-02 17:01:32,108 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:01:32,118 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:01:32,123 [INFO] sqlalchemy.engine.Engine: [cached since 134.4s ago] (2,)
+2022-05-02 17:01:34,784 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:01:34,790 [INFO] sqlalchemy.engine.Engine: [cached since 137s ago] (2,)
+2022-05-02 17:01:34,873 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:01:34,876 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:01:34,878 [INFO] sqlalchemy.engine.Engine: [cached since 137.1s ago] (2,)
+2022-05-02 17:02:41,320 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:02:41,325 [INFO] sqlalchemy.engine.Engine: [cached since 203.6s ago] (2,)
+2022-05-02 17:03:19,596 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:03:19,599 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:03:19,601 [INFO] sqlalchemy.engine.Engine: [generated in 0.00234s] (2,)
+2022-05-02 17:04:11,067 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:04:11,077 [INFO] sqlalchemy.engine.Engine: [cached since 51.47s ago] (2,)
+2022-05-02 17:04:30,609 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:04:30,621 [INFO] sqlalchemy.engine.Engine: [cached since 71.02s ago] (2,)
+2022-05-02 17:04:39,271 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:04:39,275 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:04:39,279 [INFO] sqlalchemy.engine.Engine: [cached since 79.68s ago] (2,)
+2022-05-02 17:04:47,416 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:04:47,424 [INFO] sqlalchemy.engine.Engine: [cached since 87.83s ago] (2,)
+2022-05-02 17:05:21,892 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:05:21,901 [INFO] sqlalchemy.engine.Engine: [cached since 122.3s ago] (2,)
+2022-05-02 17:06:31,106 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:06:31,112 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:06:31,117 [INFO] sqlalchemy.engine.Engine: [cached since 191.5s ago] (2,)
+2022-05-02 17:06:50,376 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:06:50,386 [INFO] sqlalchemy.engine.Engine: [cached since 210.8s ago] (2,)
+2022-05-02 17:06:50,408 [INFO] sqlalchemy.engine.Engine: UPDATE users SET about=? WHERE users.id = ?
+2022-05-02 17:06:50,411 [INFO] sqlalchemy.engine.Engine: [generated in 0.00391s] ('123456', 2)
+2022-05-02 17:06:50,436 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 17:06:50,479 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:06:50,481 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:06:50,483 [INFO] sqlalchemy.engine.Engine: [cached since 210.9s ago] (2,)
+2022-05-02 17:06:50,561 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:06:50,578 [INFO] sqlalchemy.engine.Engine: [cached since 211s ago] (2,)
+2022-05-02 17:06:55,719 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:06:55,725 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:06:55,732 [INFO] sqlalchemy.engine.Engine: [cached since 216.1s ago] (2,)
+2022-05-02 17:06:56,250 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:06:56,255 [INFO] sqlalchemy.engine.Engine: [cached since 216.7s ago] (2,)
+2022-05-02 17:14:20,730 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:14:20,736 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:20,740 [INFO] sqlalchemy.engine.Engine: [cached since 661.1s ago] (2,)
+2022-05-02 17:14:20,945 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:14:20,949 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:20,953 [INFO] sqlalchemy.engine.Engine: [cached since 661.4s ago] (2,)
+2022-05-02 17:14:20,978 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:20,987 [INFO] sqlalchemy.engine.Engine: [cached since 661.4s ago] (2,)
+2022-05-02 17:14:22,191 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:14:22,198 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:22,202 [INFO] sqlalchemy.engine.Engine: [cached since 662.6s ago] (2,)
+2022-05-02 17:14:22,261 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:14:22,264 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:22,267 [INFO] sqlalchemy.engine.Engine: [cached since 662.7s ago] (2,)
+2022-05-02 17:14:38,451 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:38,458 [INFO] sqlalchemy.engine.Engine: [cached since 678.9s ago] (2,)
+2022-05-02 17:14:38,565 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:14:38,575 [INFO] sqlalchemy.engine.Engine: [cached since 679s ago] (2,)
+2022-05-02 17:16:05,254 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:16:05,261 [INFO] sqlalchemy.engine.Engine: [cached since 765.7s ago] (2,)
+2022-05-02 17:17:08,804 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:17:08,817 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:17:08,821 [INFO] sqlalchemy.engine.Engine: [cached since 829.2s ago] (2,)
+2022-05-02 17:17:09,537 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:17:09,547 [INFO] sqlalchemy.engine.Engine: [cached since 830s ago] (2,)
+2022-05-02 17:17:16,408 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:17:16,414 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:17:16,416 [INFO] sqlalchemy.engine.Engine: [cached since 836.8s ago] (2,)
+2022-05-02 17:18:51,713 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:18:51,723 [INFO] sqlalchemy.engine.Engine: [cached since 932.2s ago] (2,)
+2022-05-02 17:18:52,473 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:18:52,479 [INFO] sqlalchemy.engine.Engine: [cached since 932.9s ago] (2,)
+2022-05-02 17:19:27,704 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:19:27,708 [INFO] sqlalchemy.engine.Engine: [cached since 968.1s ago] (2,)
+2022-05-02 17:20:39,646 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:20:39,653 [INFO] sqlalchemy.engine.Engine: [cached since 1040s ago] (2,)
+2022-05-02 17:26:41,127 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:26:41,138 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:26:41,143 [INFO] sqlalchemy.engine.Engine: [cached since 1402s ago] (2,)
+2022-05-02 17:58:47,271 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:58:47,276 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:58:47,278 [INFO] sqlalchemy.engine.Engine: [generated in 0.00213s] (2,)
+2022-05-02 17:58:51,212 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 17:58:51,217 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:58:51,224 [INFO] sqlalchemy.engine.Engine: [cached since 3.948s ago] (2,)
+2022-05-02 17:58:52,129 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 17:58:52,138 [INFO] sqlalchemy.engine.Engine: [cached since 4.862s ago] (2,)
+2022-05-02 17:58:54,587 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 17:58:54,594 [INFO] sqlalchemy.engine.Engine: [generated in 0.00667s] (1000, 0)
+2022-05-02 18:11:41,920 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:11:41,928 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 18:11:41,934 [INFO] sqlalchemy.engine.Engine: [cached since 767.4s ago] (1000, 0)
+2022-05-02 18:13:46,028 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:13:46,033 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 18:13:46,035 [INFO] sqlalchemy.engine.Engine: [cached since 891.5s ago] (1000, 0)
+2022-05-02 18:40:12,162 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:40:12,167 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 18:40:12,169 [INFO] sqlalchemy.engine.Engine: [generated in 0.00260s] ('test@test.com', 1, 0)
+2022-05-02 18:40:12,227 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 18:40:12,235 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:40:12,237 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:40:12,239 [INFO] sqlalchemy.engine.Engine: [generated in 0.00153s] (2,)
+2022-05-02 18:40:12,360 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:40:12,363 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:40:12,366 [INFO] sqlalchemy.engine.Engine: [generated in 0.00334s] (2,)
+2022-05-02 18:40:17,938 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 18:40:17,942 [INFO] sqlalchemy.engine.Engine: [generated in 0.00426s] (1000, 0)
+2022-05-02 18:43:11,456 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:43:11,470 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:43:11,476 [INFO] sqlalchemy.engine.Engine: [cached since 179.1s ago] (2,)
+2022-05-02 18:43:11,598 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:43:11,600 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:43:11,602 [INFO] sqlalchemy.engine.Engine: [cached since 179.2s ago] (2,)
+2022-05-02 18:43:13,916 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:43:13,926 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:43:13,929 [INFO] sqlalchemy.engine.Engine: [cached since 181.6s ago] (2,)
+2022-05-02 18:43:44,867 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:43:44,884 [INFO] sqlalchemy.engine.Engine: [cached since 212.5s ago] (2,)
+2022-05-02 18:43:50,259 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:43:50,265 [INFO] sqlalchemy.engine.Engine: [cached since 217.9s ago] (2,)
+2022-05-02 18:43:59,471 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:43:59,480 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:43:59,485 [INFO] sqlalchemy.engine.Engine: [cached since 227.1s ago] (2,)
+2022-05-02 18:44:17,446 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:44:17,456 [INFO] sqlalchemy.engine.Engine: [cached since 245.1s ago] (2,)
+2022-05-02 18:44:17,631 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:44:17,634 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:44:17,637 [INFO] sqlalchemy.engine.Engine: [cached since 245.3s ago] (2,)
+2022-05-02 18:44:29,164 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:44:29,172 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:44:29,184 [INFO] sqlalchemy.engine.Engine: [cached since 256.8s ago] (2,)
+2022-05-02 18:45:24,563 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:45:24,571 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:45:24,575 [INFO] sqlalchemy.engine.Engine: [cached since 312.2s ago] (2,)
+2022-05-02 18:45:24,750 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 18:45:24,754 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 18:45:24,757 [INFO] sqlalchemy.engine.Engine: [cached since 312.4s ago] (2,)
+2022-05-02 19:12:45,328 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:12:45,334 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:12:45,347 [INFO] sqlalchemy.engine.Engine: [generated in 0.00977s] (2,)
+2022-05-02 19:12:45,547 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:12:45,556 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:12:45,559 [INFO] sqlalchemy.engine.Engine: [cached since 0.2247s ago] (2,)
+2022-05-02 19:14:37,031 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:14:37,035 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 19:14:37,038 [INFO] sqlalchemy.engine.Engine: [generated in 0.00266s] ('test@test.com', 1, 0)
+2022-05-02 19:14:37,098 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:14:37,102 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:14:37,105 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:14:37,107 [INFO] sqlalchemy.engine.Engine: [generated in 0.00244s] (2,)
+2022-05-02 19:14:37,271 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:14:37,273 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:14:37,276 [INFO] sqlalchemy.engine.Engine: [generated in 0.00248s] (2,)
+2022-05-02 19:14:41,068 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:14:41,073 [INFO] sqlalchemy.engine.Engine: [cached since 3.799s ago] (2,)
+2022-05-02 19:14:41,087 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:14:41,092 [INFO] sqlalchemy.engine.Engine: [generated in 0.00518s] (1000, 0)
+2022-05-02 19:16:25,065 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:16:25,068 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:16:25,071 [INFO] sqlalchemy.engine.Engine: [generated in 0.00312s] (1000, 0)
+2022-05-02 19:16:29,393 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:16:29,400 [INFO] sqlalchemy.engine.Engine: [generated in 0.00661s] (2,)
+2022-05-02 19:16:31,679 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:16:31,685 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:16:31,689 [INFO] sqlalchemy.engine.Engine: [cached since 6.62s ago] (1000, 0)
+2022-05-02 19:22:52,825 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:22:52,829 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:22:52,832 [INFO] sqlalchemy.engine.Engine: [generated in 0.00360s] (1000, 0)
+2022-05-02 19:22:53,828 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:22:53,835 [INFO] sqlalchemy.engine.Engine: [cached since 1.006s ago] (1000, 0)
+2022-05-02 19:25:28,381 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:25:28,396 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:25:28,402 [INFO] sqlalchemy.engine.Engine: [cached since 155.6s ago] (1000, 0)
+2022-05-02 19:25:29,259 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:25:29,266 [INFO] sqlalchemy.engine.Engine: [cached since 156.4s ago] (1000, 0)
+2022-05-02 19:26:26,517 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:26:26,520 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:26:26,524 [INFO] sqlalchemy.engine.Engine: [generated in 0.00280s] (2,)
+2022-05-02 19:26:26,786 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:26:26,788 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:26:26,792 [INFO] sqlalchemy.engine.Engine: [cached since 0.272s ago] (2,)
+2022-05-02 19:26:29,735 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:26:29,742 [INFO] sqlalchemy.engine.Engine: [generated in 0.00671s] (1000, 0)
+2022-05-02 19:27:42,410 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:27:42,412 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:27:42,414 [INFO] sqlalchemy.engine.Engine: [generated in 0.00210s] (1000, 0)
+2022-05-02 19:27:43,226 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:27:43,234 [INFO] sqlalchemy.engine.Engine: [cached since 0.8215s ago] (1000, 0)
+2022-05-02 19:27:46,110 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:27:46,118 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:27:46,124 [INFO] sqlalchemy.engine.Engine: [generated in 0.00537s] (2,)
+2022-05-02 19:27:48,409 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:27:48,416 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:27:48,422 [INFO] sqlalchemy.engine.Engine: [cached since 6.009s ago] (1000, 0)
+2022-05-02 19:30:40,251 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:30:40,253 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:30:40,257 [INFO] sqlalchemy.engine.Engine: [generated in 0.00403s] (1000, 0)
+2022-05-02 19:30:41,164 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:30:41,179 [INFO] sqlalchemy.engine.Engine: [cached since 0.9259s ago] (1000, 0)
+2022-05-02 19:30:41,799 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:30:41,808 [INFO] sqlalchemy.engine.Engine: [cached since 1.555s ago] (1000, 0)
+2022-05-02 19:31:04,552 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:31:04,555 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:31:04,556 [INFO] sqlalchemy.engine.Engine: [generated in 0.00159s] (2,)
+2022-05-02 19:31:04,740 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:31:04,743 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:31:04,745 [INFO] sqlalchemy.engine.Engine: [cached since 0.1904s ago] (2,)
+2022-05-02 19:31:07,717 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:31:07,725 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:31:07,730 [INFO] sqlalchemy.engine.Engine: [generated in 0.00514s] (1000, 0)
+2022-05-02 19:34:13,672 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:13,674 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:34:13,677 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:13,685 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:34:13,688 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:13,694 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:34:13,704 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:13,705 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:34:13,707 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:13,711 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:34:13,712 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:13,720 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:34:13,725 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:13,727 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:34:13,729 [INFO] sqlalchemy.engine.Engine: [generated in 0.00167s] (1000, 0)
+2022-05-02 19:34:14,646 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:34:14,656 [INFO] sqlalchemy.engine.Engine: [cached since 0.9282s ago] (1000, 0)
+2022-05-02 19:34:15,376 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:15,383 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:34:15,389 [INFO] sqlalchemy.engine.Engine: [cached since 1.666s ago] (1000, 0)
+2022-05-02 19:34:38,742 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:38,744 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:34:38,747 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:38,756 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:34:38,758 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:38,762 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:34:38,766 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:38,767 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:34:38,770 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:38,775 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:34:38,777 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:38,779 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:34:38,785 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:38,787 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:34:38,789 [INFO] sqlalchemy.engine.Engine: [generated in 0.00134s] (1000, 0)
+2022-05-02 19:34:39,726 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:39,732 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:34:39,744 [INFO] sqlalchemy.engine.Engine: [cached since 0.9567s ago] (1000, 0)
+2022-05-02 19:34:54,246 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:54,247 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:34:54,248 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:54,256 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:34:54,258 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:54,261 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:34:54,263 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:54,265 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:34:54,266 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:54,270 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:34:54,272 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:34:54,275 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:34:54,280 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:34:54,283 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:34:54,284 [INFO] sqlalchemy.engine.Engine: [generated in 0.00158s] (1000, 0)
+2022-05-02 19:34:58,392 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:34:58,398 [INFO] sqlalchemy.engine.Engine: [generated in 0.00664s] (2,)
+2022-05-02 19:35:00,829 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:35:00,835 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:35:00,842 [INFO] sqlalchemy.engine.Engine: [cached since 6.559s ago] (1000, 0)
+2022-05-02 19:36:02,383 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:36:02,385 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:36:02,388 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:36:02,397 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:36:02,399 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:36:02,403 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:36:02,405 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:36:02,407 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:36:02,408 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:36:02,413 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:36:02,414 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:36:02,417 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:36:02,424 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:36:02,427 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:36:02,429 [INFO] sqlalchemy.engine.Engine: [generated in 0.00159s] (2,)
+2022-05-02 19:36:02,648 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:36:02,650 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:36:02,654 [INFO] sqlalchemy.engine.Engine: [cached since 0.2266s ago] (2,)
+2022-05-02 19:36:05,599 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:36:05,605 [INFO] sqlalchemy.engine.Engine: [cached since 3.177s ago] (2,)
+2022-05-02 19:36:15,565 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 19:36:15,572 [INFO] sqlalchemy.engine.Engine: [generated in 0.00661s] (1000, 0)
+2022-05-02 19:38:17,655 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:38:17,657 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:38:17,659 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:38:17,667 [INFO] sqlalchemy.engine.Engine: PRAGMA temp.table_info("transactions")
+2022-05-02 19:38:17,668 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:38:17,670 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:38:17,672 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:38:17,675 [INFO] sqlalchemy.engine.Engine: PRAGMA temp.table_info("users")
+2022-05-02 19:38:17,676 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:38:17,678 [INFO] sqlalchemy.engine.Engine: 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	user_image VARCHAR(30) NOT NULL, 
+	email VARCHAR(120) NOT NULL, 
+	password VARCHAR(300) NOT NULL, 
+	about VARCHAR(300), 
+	authenticated BOOLEAN, 
+	registered_on DATETIME, 
+	is_active BOOLEAN DEFAULT '1' NOT NULL, 
+	is_admin BOOLEAN DEFAULT '0' NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (email), 
+	UNIQUE (password)
+)
+
+
+2022-05-02 19:38:17,680 [INFO] sqlalchemy.engine.Engine: [no key 0.00227s] ()
+2022-05-02 19:38:17,696 [INFO] sqlalchemy.engine.Engine: 
+CREATE TABLE transactions (
+	id INTEGER NOT NULL, 
+	amount VARCHAR(300), 
+	credit_debit VARCHAR(300), 
+	user_id INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2022-05-02 19:38:17,697 [INFO] sqlalchemy.engine.Engine: [no key 0.00160s] ()
+2022-05-02 19:38:17,717 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:38:17,722 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:38:17,724 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 19:38:17,725 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:38:17,729 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 19:38:17,732 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 19:38:17,735 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 19:38:17,742 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:38:17,745 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:38:17,747 [INFO] sqlalchemy.engine.Engine: [generated in 0.00154s] (2,)
+2022-05-02 19:38:27,713 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:38:27,724 [INFO] sqlalchemy.engine.Engine: [cached since 9.979s ago] (2,)
+2022-05-02 19:38:27,742 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 19:38:27,746 [INFO] sqlalchemy.engine.Engine: [generated in 0.00449s] ('test@test.com', 1, 0)
+2022-05-02 19:38:27,806 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 19:38:27,808 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:38:27,810 [INFO] sqlalchemy.engine.Engine: [cached since 10.06s ago] (2,)
+2022-05-02 19:38:38,328 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:38:38,343 [INFO] sqlalchemy.engine.Engine: [cached since 20.6s ago] (2,)
+2022-05-02 19:38:38,441 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:38:38,443 [INFO] sqlalchemy.engine.Engine: [cached since 20.7s ago] (2,)
+2022-05-02 19:38:51,103 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 19:38:51,109 [INFO] sqlalchemy.engine.Engine: [cached since 33.36s ago] (2,)
+2022-05-02 19:38:51,121 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 19:38:51,126 [INFO] sqlalchemy.engine.Engine: [cached since 23.39s ago] ('test@test.com', 1, 0)
+2022-05-02 20:22:37,660 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:22:37,661 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:22:37,663 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:22:37,672 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:22:37,674 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:22:37,678 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:22:37,681 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:22:37,683 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:22:37,684 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:22:37,689 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:22:37,691 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:22:37,694 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:07,599 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:07,601 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:23:07,604 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:23:07,613 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:23:07,615 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:23:07,619 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:07,622 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:07,624 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:23:07,626 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:23:07,631 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:23:07,632 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:23:07,635 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:07,641 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:07,644 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:23:07,646 [INFO] sqlalchemy.engine.Engine: [generated in 0.00155s] ('test@test.com', 1, 0)
+2022-05-02 20:23:07,699 [INFO] sqlalchemy.engine.Engine: INSERT INTO users (user_image, email, password, about, authenticated, registered_on) VALUES (?, ?, ?, ?, ?, ?)
+2022-05-02 20:23:07,703 [INFO] sqlalchemy.engine.Engine: [generated in 0.00370s] ('default.png', 'test@test.com', 'pbkdf2:sha256:260000$MFxYoHALbF5dizAD$78d427853ecb3fc4b9b72935026c53a295ecfa134378ce52a8fd67471b6c7965', None, 0, '2022-05-02 20:23:07.698959')
+2022-05-02 20:23:07,723 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:07,746 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:07,748 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:23:07,749 [INFO] sqlalchemy.engine.Engine: [generated in 0.00135s] (1,)
+2022-05-02 20:23:07,762 [INFO] sqlalchemy.engine.Engine: UPDATE users SET is_admin=? WHERE users.id = ?
+2022-05-02 20:23:07,763 [INFO] sqlalchemy.engine.Engine: [generated in 0.00167s] (1, 1)
+2022-05-02 20:23:07,774 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:17,848 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:17,854 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:23:17,859 [INFO] sqlalchemy.engine.Engine: [cached since 10.21s ago] ('test@test.com', 1, 0)
+2022-05-02 20:23:17,930 [INFO] sqlalchemy.engine.Engine: UPDATE users SET authenticated=? WHERE users.id = ?
+2022-05-02 20:23:17,932 [INFO] sqlalchemy.engine.Engine: [generated in 0.00200s] (1, 1)
+2022-05-02 20:23:17,944 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:17,958 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:17,959 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:23:17,960 [INFO] sqlalchemy.engine.Engine: [cached since 10.21s ago] (1,)
+2022-05-02 20:23:26,961 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:23:26,968 [INFO] sqlalchemy.engine.Engine: [cached since 19.32s ago] ('test@test.com', 1, 0)
+2022-05-02 20:23:27,052 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:27,057 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:27,059 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:23:27,060 [INFO] sqlalchemy.engine.Engine: [cached since 19.31s ago] (1,)
+2022-05-02 20:23:48,385 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:48,394 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:23:48,401 [INFO] sqlalchemy.engine.Engine: [cached since 40.75s ago] ('test@test.com', 1, 0)
+2022-05-02 20:23:56,225 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:23:56,233 [INFO] sqlalchemy.engine.Engine: [cached since 48.58s ago] ('test@test.com', 1, 0)
+2022-05-02 20:23:56,319 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:23:56,323 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:23:56,325 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:23:56,327 [INFO] sqlalchemy.engine.Engine: [cached since 48.57s ago] (1,)
+2022-05-02 20:25:25,835 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:25:25,836 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:25:25,839 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:25:25,849 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:25:25,851 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:25:25,855 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:25:25,858 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:25:25,860 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:25:25,861 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:25:25,866 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:25:25,867 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:25:25,871 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:25:25,877 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:25:25,880 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:25:25,882 [INFO] sqlalchemy.engine.Engine: [generated in 0.00196s] ('test@test.com', 1, 0)
+2022-05-02 20:25:25,933 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:25:25,937 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:25:25,939 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:25:25,941 [INFO] sqlalchemy.engine.Engine: [generated in 0.00182s] (1,)
+2022-05-02 20:25:33,429 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:25:33,437 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:25:33,445 [INFO] sqlalchemy.engine.Engine: [cached since 7.565s ago] ('test@test.com', 1, 0)
+2022-05-02 20:25:33,510 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:25:33,515 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:25:33,517 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:25:33,518 [INFO] sqlalchemy.engine.Engine: [cached since 7.579s ago] (1,)
+2022-05-02 20:26:41,199 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:26:41,210 [INFO] sqlalchemy.engine.Engine: [cached since 75.33s ago] ('test@test.com', 1, 0)
+2022-05-02 20:26:49,402 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:26:49,414 [INFO] sqlalchemy.engine.Engine: [cached since 83.54s ago] ('test@test.com', 1, 0)
+2022-05-02 20:26:49,486 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:29:10,026 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:10,027 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:29:10,029 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:29:10,035 [INFO] sqlalchemy.engine.Engine: PRAGMA temp.table_info("transactions")
+2022-05-02 20:29:10,037 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:29:10,039 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:29:10,040 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:29:10,041 [INFO] sqlalchemy.engine.Engine: PRAGMA temp.table_info("users")
+2022-05-02 20:29:10,043 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:29:10,045 [INFO] sqlalchemy.engine.Engine: 
+CREATE TABLE users (
+	id INTEGER NOT NULL, 
+	user_image VARCHAR(30) NOT NULL, 
+	email VARCHAR(120) NOT NULL, 
+	password VARCHAR(300) NOT NULL, 
+	about VARCHAR(300), 
+	authenticated BOOLEAN, 
+	registered_on DATETIME, 
+	is_active BOOLEAN DEFAULT '1' NOT NULL, 
+	is_admin BOOLEAN DEFAULT '0' NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (email), 
+	UNIQUE (password)
+)
+
+
+2022-05-02 20:29:10,047 [INFO] sqlalchemy.engine.Engine: [no key 0.00186s] ()
+2022-05-02 20:29:10,066 [INFO] sqlalchemy.engine.Engine: 
+CREATE TABLE transactions (
+	id INTEGER NOT NULL, 
+	amount VARCHAR(300), 
+	credit_debit VARCHAR(300), 
+	user_id INTEGER, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2022-05-02 20:29:10,067 [INFO] sqlalchemy.engine.Engine: [no key 0.00124s] ()
+2022-05-02 20:29:10,087 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:29:10,091 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:10,093 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:29:10,094 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:29:10,099 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:29:10,100 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:29:10,103 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:29:17,154 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:17,164 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:29:17,169 [INFO] sqlalchemy.engine.Engine: [generated in 0.00502s] ('test@test.com', 1, 0)
+2022-05-02 20:29:32,035 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:32,041 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:29:32,047 [INFO] sqlalchemy.engine.Engine: [cached since 14.88s ago] ('test@test.com', 1, 0)
+2022-05-02 20:29:32,127 [INFO] sqlalchemy.engine.Engine: INSERT INTO users (user_image, email, password, about, authenticated, registered_on) VALUES (?, ?, ?, ?, ?, ?)
+2022-05-02 20:29:32,129 [INFO] sqlalchemy.engine.Engine: [generated in 0.00224s] ('default.png', 'test@test.com', 'pbkdf2:sha256:260000$5azUJysY50JI2MKM$dc301e6798124ab2eca5e0de72be63278180c7ea7803907e69ee77e720699b5e', None, 0, '2022-05-02 20:29:32.126029')
+2022-05-02 20:29:32,148 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:29:32,164 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:32,166 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:29:32,167 [INFO] sqlalchemy.engine.Engine: [generated in 0.00110s] (1,)
+2022-05-02 20:29:32,173 [INFO] sqlalchemy.engine.Engine: UPDATE users SET is_admin=? WHERE users.id = ?
+2022-05-02 20:29:32,174 [INFO] sqlalchemy.engine.Engine: [generated in 0.00147s] (1, 1)
+2022-05-02 20:29:32,186 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:29:38,891 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:38,899 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:29:38,904 [INFO] sqlalchemy.engine.Engine: [cached since 21.74s ago] ('test@test.com', 1, 0)
+2022-05-02 20:29:38,987 [INFO] sqlalchemy.engine.Engine: UPDATE users SET authenticated=? WHERE users.id = ?
+2022-05-02 20:29:38,989 [INFO] sqlalchemy.engine.Engine: [generated in 0.00269s] (1, 1)
+2022-05-02 20:29:39,003 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:29:39,014 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:29:39,016 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:29:39,017 [INFO] sqlalchemy.engine.Engine: [cached since 6.852s ago] (1,)
+2022-05-02 20:30:09,547 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:30:09,559 [INFO] sqlalchemy.engine.Engine: [cached since 52.39s ago] ('test@test.com', 1, 0)
+2022-05-02 20:30:09,611 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:30:09,615 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:30:09,617 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:30:09,622 [INFO] sqlalchemy.engine.Engine: [cached since 37.45s ago] (1,)
+2022-05-02 20:30:27,968 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:30:27,974 [INFO] sqlalchemy.engine.Engine: [cached since 70.81s ago] ('test@test1.com', 1, 0)
+2022-05-02 20:30:36,297 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:30:36,305 [INFO] sqlalchemy.engine.Engine: [cached since 79.14s ago] ('test@test.com', 1, 0)
+2022-05-02 20:30:36,388 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:30:36,394 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:30:36,396 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:30:36,399 [INFO] sqlalchemy.engine.Engine: [cached since 64.23s ago] (1,)
+2022-05-02 20:31:30,873 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:30,875 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:31:30,876 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:30,881 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:31:30,882 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:30,886 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:31:30,888 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:30,890 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:31:30,892 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:30,895 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:31:30,897 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:30,900 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:31:37,070 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:37,079 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:31:37,082 [INFO] sqlalchemy.engine.Engine: [generated in 0.00303s] ('test@test.com', 1, 0)
+2022-05-02 20:31:37,148 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:31:37,152 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:37,155 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:31:37,156 [INFO] sqlalchemy.engine.Engine: [generated in 0.00162s] (1,)
+2022-05-02 20:31:50,589 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:50,590 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:31:50,592 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:50,598 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:31:50,600 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:50,603 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:31:50,605 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:50,607 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:31:50,608 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:50,613 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:31:50,614 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:31:50,618 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:31:50,624 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:50,627 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:31:50,628 [INFO] sqlalchemy.engine.Engine: [generated in 0.00128s] ('test@test.com', 1, 0)
+2022-05-02 20:31:50,680 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:31:50,683 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:31:50,685 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:31:50,687 [INFO] sqlalchemy.engine.Engine: [generated in 0.00153s] (1,)
+2022-05-02 20:34:24,584 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:34:24,584 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:34:24,587 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:34:24,596 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:34:24,598 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:34:24,602 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:34:24,606 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:34:24,607 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:34:24,609 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:34:24,615 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:34:24,617 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:34:24,620 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:37:34,186 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:37:34,187 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:37:34,189 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:37:34,195 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:37:34,197 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:37:34,200 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:37:34,203 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:37:34,205 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:37:34,208 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:37:34,213 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:37:34,214 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:37:34,217 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:37:45,786 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:37:45,795 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:37:45,800 [INFO] sqlalchemy.engine.Engine: [generated in 0.00492s] ('test@test.com', 1, 0)
+2022-05-02 20:46:43,070 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:46:43,073 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:46:43,080 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:46:43,095 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:46:43,097 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:46:43,101 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:46:43,109 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:46:43,110 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:46:43,112 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:46:43,116 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:46:43,117 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:46:43,120 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:46:53,009 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:46:53,020 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:46:53,025 [INFO] sqlalchemy.engine.Engine: [generated in 0.00398s] ('test@test.com', 1, 0)
+2022-05-02 20:46:53,096 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:46:53,101 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:46:53,104 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:46:53,106 [INFO] sqlalchemy.engine.Engine: [generated in 0.00179s] (1,)
+2022-05-02 20:47:00,827 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:47:00,836 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 20:47:00,842 [INFO] sqlalchemy.engine.Engine: [generated in 0.00565s] (1000, 0)
+2022-05-02 20:47:00,863 [INFO] sqlalchemy.engine.Engine: SELECT count(*) AS count_1 
+FROM (SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions) AS anon_1
+2022-05-02 20:47:00,868 [INFO] sqlalchemy.engine.Engine: [generated in 0.00442s] ()
+2022-05-02 20:48:05,733 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:48:05,735 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:48:05,737 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:48:05,747 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:48:05,749 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:48:05,752 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:48:05,755 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:48:05,756 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:48:05,758 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:48:05,763 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:48:05,764 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:48:05,767 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:48:05,773 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:48:05,776 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 20:48:05,777 [INFO] sqlalchemy.engine.Engine: [generated in 0.00147s] (1000, 0)
+2022-05-02 20:48:05,784 [INFO] sqlalchemy.engine.Engine: SELECT count(*) AS count_1 
+FROM (SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions) AS anon_1
+2022-05-02 20:48:05,787 [INFO] sqlalchemy.engine.Engine: [generated in 0.00228s] ()
+2022-05-02 20:48:13,466 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:48:13,480 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:48:13,492 [INFO] sqlalchemy.engine.Engine: [generated in 0.01297s] ('test@test.com', 1, 0)
+2022-05-02 20:48:13,564 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:48:13,569 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:48:13,572 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:48:13,573 [INFO] sqlalchemy.engine.Engine: [generated in 0.00131s] (1,)
+2022-05-02 20:50:02,363 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:50:02,364 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:50:02,366 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:50:02,375 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:50:02,377 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:50:02,381 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:50:02,384 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:50:02,385 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 20:50:02,387 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:50:02,392 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 20:50:02,394 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 20:50:02,397 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:50:09,486 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:50:09,495 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 20:50:09,499 [INFO] sqlalchemy.engine.Engine: [generated in 0.00374s] ('test@test.com', 1, 0)
+2022-05-02 20:50:09,564 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 20:50:09,569 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:50:09,572 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 20:50:09,574 [INFO] sqlalchemy.engine.Engine: [generated in 0.00180s] (1,)
+2022-05-02 20:50:12,520 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 20:50:12,527 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id IS NULL
+2022-05-02 20:50:12,533 [INFO] sqlalchemy.engine.Engine: [generated in 0.00589s] ()
+2022-05-02 21:37:34,131 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:34,133 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 21:37:34,135 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 21:37:34,142 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 21:37:34,143 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 21:37:34,147 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 21:37:34,150 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:34,152 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-02 21:37:34,153 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 21:37:34,157 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-02 21:37:34,158 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-02 21:37:34,161 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 21:37:46,626 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:46,635 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-02 21:37:46,639 [INFO] sqlalchemy.engine.Engine: [generated in 0.00385s] ('test@test.com', 1, 0)
+2022-05-02 21:37:46,701 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-02 21:37:46,707 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:46,710 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 21:37:46,712 [INFO] sqlalchemy.engine.Engine: [generated in 0.00264s] (1,)
+2022-05-02 21:37:46,732 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-02 21:37:46,864 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:46,872 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 21:37:46,881 [INFO] sqlalchemy.engine.Engine: [generated in 0.00890s] (1,)
+2022-05-02 21:37:46,891 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-02 21:37:50,513 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:50,521 [INFO] sqlalchemy.engine.Engine: SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions
+ LIMIT ? OFFSET ?
+2022-05-02 21:37:50,528 [INFO] sqlalchemy.engine.Engine: [generated in 0.00668s] (1000, 0)
+2022-05-02 21:37:50,551 [INFO] sqlalchemy.engine.Engine: SELECT count(*) AS count_1 
+FROM (SELECT transactions.id AS transactions_id, transactions.amount AS transactions_amount, transactions.credit_debit AS transactions_credit_debit, transactions.user_id AS transactions_user_id 
+FROM transactions) AS anon_1
+2022-05-02 21:37:50,554 [INFO] sqlalchemy.engine.Engine: [generated in 0.00296s] ()
+2022-05-02 21:37:50,563 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 21:37:50,565 [INFO] sqlalchemy.engine.Engine: [cached since 3.694s ago] (1,)
+2022-05-02 21:37:50,622 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-02 21:37:52,257 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:37:52,262 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 21:37:52,267 [INFO] sqlalchemy.engine.Engine: [cached since 5.396s ago] (1,)
+2022-05-02 21:37:52,316 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-02 21:38:03,897 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-02 21:38:03,909 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.user_image AS users_user_image, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-02 21:38:03,912 [INFO] sqlalchemy.engine.Engine: [cached since 17.04s ago] (1,)

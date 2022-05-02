@@ -1,20 +1,17 @@
+import os
+
 import logging
 from logging.config import dictConfig
 
 import flask
-from flask import request, current_app
+from flask import request, current_app, Blueprint
 
 from app.logging_config.log_formatters import RequestFormatter
+from app import config
 
-log_con = flask.Blueprint('log_con', __name__)
+log_con = Blueprint('log_con', __name__)
 
-
-@log_con.before_app_request
-def before_request_logging():
-    current_app.logger.info("Before Request")
-    log = logging.getLogger("general")
-    log.info("General Logging")
-
+logdir = config.Config.LOG_DIR
 
 @log_con.after_app_request
 def after_request_logging(response):
@@ -27,17 +24,27 @@ def after_request_logging(response):
     current_app.logger.info("After Request")
 
     log = logging.getLogger("general")
-    log.info("General Logging")
+    message = message_formatter()
+    log.info(message)
     return response
 
 
+def message_formatter():
+    method = request.method
+    if len(method) == 0:
+        method = "None"
+    path = request.path
+    ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    message = "MEHTOD:" + method + " ROUTE:" + ip + " PATH:" + path
+    return message
+
+
 @log_con.before_app_first_request
-def configure_logging():
+def setup_logs():
+    # make a directory if it doesn't exist
+    if not os.path.exists(logdir):
+        os.mkdir(logdir)
     logging.config.dictConfig(LOGGING_CONFIG)
-    log = logging.getLogger("general")
-    log.info("General Logging")
-    log = logging.getLogger("errors")
-    log.info("Error")
 
 
 LOGGING_CONFIG = {
@@ -63,42 +70,42 @@ LOGGING_CONFIG = {
         'file.handler': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'standard',
-            'filename': 'app/logs/flask.log',
+            'filename': 'logs/flask.log',
             'maxBytes': 10000000,
             'backupCount': 5,
         },
         'file.handler.general': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'standard',
-            'filename': 'app/logs/general.log',
+            'filename': 'logs/general.log',
             'maxBytes': 10000000,
             'backupCount': 5,
         },
         'file.handler.request': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'RequestFormatter',
-            'filename': 'app/logs/request.log',
+            'filename': 'logs/request.log',
             'maxBytes': 10000000,
             'backupCount': 5,
         },
         'file.handler.errors': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'standard',
-            'filename': 'app/logs/errors.log',
+            'filename': 'logs/errors.log',
             'maxBytes': 10000000,
             'backupCount': 5,
         },
         'file.handler.sqlalchemy': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'standard',
-            'filename': 'app/logs/sqlalchemy.log',
+            'filename': 'logs/sqlalchemy.log',
             'maxBytes': 10000000,
             'backupCount': 5,
         },
         'file.handler.werkzeug': {
             'class': 'logging.handlers.RotatingFileHandler',
             'formatter': 'standard',
-            'filename': 'app/logs/werkzeug.log',
+            'filename': 'logs/werkzeug.log',
             'maxBytes': 10000000,
             'backupCount': 5,
         },

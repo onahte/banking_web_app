@@ -2,14 +2,18 @@ import os
 
 
 class Config(object):
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     DEBUG = False
     TESTING = False
-    SECRET_KEY = 'This is an INSECURE secret!! DO NOT use this in production!!'
+    SECRET_KEY = '4xfd{Hxxe5<we95p0bf9WWeu4x96e59236xne1O<!oe976xckswa0pp9fRqqu11nmx8'
     SESSION_COOKIE_SECURE = True
     BOOTSTRAP_BOOTSWATCH_THEME = 'Simplex'
-    db_dir = "database/db.sqlite"
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.abspath(db_dir)
+    DB_DIR = os.getenv('DB_DIR', 'database')
+    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(BASE_DIR,'..', DB_DIR, "db.sqlite")
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    UPLOAD_FOLDER = os.getenv('UPLOAD_FOLDER','uploads')
+    IMAGE_FOLDER = os.path.join(BASE_DIR, 'static/images/profile')
+    LOG_DIR = os.getenv('LOG_DIR', 'logs')
 
 
 class ProductionConfig(Config):
@@ -23,5 +27,7 @@ class DevelopmentConfig(Config):
 
 class TestingConfig(Config):
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = "sqlite:///"
+    SQLALCHEMY_DATABASE_URI = "sqlite:///:memory:"
     SESSION_COOKIE_SECURE = False
+    DEBUG = True
+    WTF_CSRF_ENABLED = False

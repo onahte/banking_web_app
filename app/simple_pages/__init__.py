@@ -6,13 +6,15 @@ from ..auth.forms import login_form, register_form, profile_form, security_form,
 from ..db import db
 from ..db.models import User
 from ..auth import auth
-from ..logs import *
+from logs import *
 
 
 simple_pages = Blueprint('simple_pages', __name__, template_folder='templates')
 
 @simple_pages.route('/about')
 def about():
+    if not current_user.is_authenticated:
+        return render_template('main_login.html')
     try:
         return render_template('about.html')
     except TemplateNotFound:
@@ -27,7 +29,7 @@ def index():
         user = User.query.filter_by(email=form.email.data).first()
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
-            return redirect(url_for('main_login'))
+            return render_template('main_login.html')
         else:
             user.authenticated = True
             db.session.add(user)
@@ -36,7 +38,3 @@ def index():
             flash("Welcome back!")
             return render_template('index.html')
     return render_template('main_login.html')
-
-@simple_pages.route('/show_log')
-def show_log():
-    return render_template("general.log")

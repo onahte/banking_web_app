@@ -2,10 +2,15 @@
 {% block content %}
     {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
 
-    <div class="row">
-
+    <div class="row mb-5">
          <div class="mx-auto">
-             <h2>Manage Profile</h2>
+             <h3>Manage Profile</h3>
+             <p>
+                <img src="{{ url_for('static', filename='images/profile/'+ current_user.user_image ) }}"
+                height="35" class="rounded-circle">
+                {{ current_user.email }}
+            </p>
+             <h5>Upload a new image to change your profile pic.</h5>
              {{ render_form(form) }}
          </div>
     </div>

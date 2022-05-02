@@ -10,11 +10,15 @@
                          loading="lazy">
                 </div>
                 <div class="col-lg-9">
-                    <h2 class="fw-bold lh-1 mb-3">Dashboard</h2>
+                    <h3 class="fw-bold lh-1 mb-3">Dashboard</h3>
                     <hr class="featurette-divider">
-                    <p>Welcome: {{ current_user.email }}</p>
+                    <p>
+                        <img src="{{ url_for('static', filename='images/profile/' + current_user.user_image ) }}"
+                        height="35" class="rounded-circle">
+                        {{ current_user.email }}
+                    </p>
                 </div>
             </div>
-            <hr class="featurette-divider">
+
         </div>
 {% endblock %}

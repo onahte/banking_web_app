@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
+<div class="container">
+    <div class="col-lg-9">
+        <h1 class="type-header">General Logs</h1>
+        <hr class="featurette-divider">
+        <p class="type"><pre>{{ text }}</pre></p>
+    </div>
+</div>
+{% endblock %}
