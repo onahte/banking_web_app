@@ -6,10 +6,11 @@
 <div class="row col-8 type">
     {% block title %}Browse: {{ record_type }}{% endblock %}
     {% block content %}
-
+        <span class="t">
         <a href="{{ url_for("transactions.transactions_upload") }}" class="btn col-3 mb-5 btn-info" role="button">Upload Transactions</a>
-
+        </span>
         <h2 class="type-header">Browse: Transactions</h2>
+        <span class="t">
         {{ render_table(data) }}
         {% from 'bootstrap5/pagination.html' import render_pagination %}
 
@@ -22,7 +23,7 @@
                 $('.table').DataTable();
             });
         </script>
-
+        </span>
 
 </div>
     {% endblock %}

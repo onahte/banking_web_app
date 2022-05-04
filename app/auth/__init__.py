@@ -1,6 +1,7 @@
 import os
 import secrets
 
+from PIL import Image
 from flask import Blueprint, render_template, redirect, url_for, flash,current_app
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash
@@ -78,12 +79,15 @@ def logout():
 def dashboard():
     return render_template('dashboard.html')
 
-def save_picture(form_picture):
+def save_picture(form_image):
     random_hex = secrets.token_hex(8)
-    _, f_ext = os.path.splitext(form_picture.filename)
+    _, f_ext = os.path.splitext(form_image.filename)
     image =  random_hex + f_ext
     image_path = os.path.join(config.Config.IMAGE_FOLDER, image)
-    form_picture.save(image_path)
+    image_resize = (45, 45)
+    i = Image.open(form_image)
+    i.thumbnail(image_resize)
+    i.save(image_path)
     return image
 
 @auth.route('/profile', methods=['POST', 'GET'])

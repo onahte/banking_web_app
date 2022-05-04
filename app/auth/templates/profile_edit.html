@@ -5,13 +5,14 @@
     <div class="row mb-5">
          <div class="mx-auto">
              <h3>Manage Profile</h3>
-             <p>
+             <span class="t">
                 <img src="{{ url_for('static', filename='images/profile/'+ current_user.user_image ) }}"
                 height="35" class="rounded-circle">
                 {{ current_user.email }}
-            </p>
+             </span>
+             <hr class="featurette-divider c">
              <h5>Upload a new image to change your profile pic.</h5>
-             {{ render_form(form) }}
+                 <span class="t">{{ render_form(form) }}</span>
          </div>
     </div>
 

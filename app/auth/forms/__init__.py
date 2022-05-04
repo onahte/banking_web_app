@@ -33,7 +33,7 @@ class register_form(FlaskForm):
 
 
 class profile_form(FlaskForm):
-    image = FileField('Change Profile Picture', validators=[FileAllowed(['jpg','jpeg','png','gif'])])
+    image = FileField('Profile Pic', validators=[FileAllowed(['jpg','jpeg','png','gif'])])
     about = TextAreaField('About', [validators.length(min=0, max=300)],
                           description="Please add information about yourself")
 
