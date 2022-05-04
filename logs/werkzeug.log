@@ -2471,3 +2471,9 @@
 2022-05-04 14:34:57,348 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:34:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2022-05-04 14:34:57,357 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:34:57] "[36mGET /static/images/bankofethan_horizontal.svg HTTP/1.1[0m" 304 -
 2022-05-04 14:34:57,410 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:34:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-05-04 14:37:01,035 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:37:01] "GET /dashboard HTTP/1.1" 200 -
+2022-05-04 14:37:01,102 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:37:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2022-05-04 14:37:01,119 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:37:01] "[36mGET /static/images/momchild-green.jpg HTTP/1.1[0m" 304 -
+2022-05-04 14:37:01,119 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:37:01] "[36mGET /static/images/bankofethan_horizontal.svg HTTP/1.1[0m" 304 -
+2022-05-04 14:37:01,120 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:37:01] "[36mGET /static/images/profile/8d1c7fdbad557cf9.png HTTP/1.1[0m" 304 -
+2022-05-04 14:37:01,218 [INFO] werkzeug: 192.168.144.1 - - [04/May/2022 14:37:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
