@@ -1,4 +1,6 @@
 from flask_wtf import FlaskForm
+from flask_wtf.file import FileAllowed
+from flask_login import current_user
 from wtforms import validators
 from wtforms.fields import *
 
@@ -31,8 +33,8 @@ class register_form(FlaskForm):
 
 
 class profile_form(FlaskForm):
-    file = FileField()
-    about = TextAreaField('About', [validators.length(min=6, max=300)],
+    image = FileField('Change Profile Picture', validators=[FileAllowed(['jpg','jpeg','png','gif'])])
+    about = TextAreaField('About', [validators.length(min=0, max=300)],
                           description="Please add information about yourself")
 
     submit = SubmitField()

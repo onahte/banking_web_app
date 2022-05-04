@@ -9,20 +9,20 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Bank of Ethan</title>
   </head>
-    <div class="row mt-5">
+    <div class="row mt-5 c">
         <body class="text-center grad">
         {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
-             <div class="col-4 border-gray rounded-3 shadow-lg mx-auto mb-4 p-4" style="background-color: whitesmoke">
+             <div class="col-4 border-gray rounded-3 shadow-lg mx-auto mb-4 p-4 t" style="background-color: whitesmoke">
                  <img class="mb-4 text-center" src="{{ url_for('static', filename='images/bankofethan.svg') }}"
                       height="190">
                  {{ render_form(form) }}
                  <br>
-                 <p class="small-type">
+                 <p class="small-type t">
                      If you do not have an account, please
                      <a href="{{ url_for('auth.register', page="Register")}}">register</a>.
                  </p>
              </div>
-            <p class="small-type">
+            <p class="small-type t">
                 &#169; Copyright: {{ year }} Ethan Oh &middot; <a href="mailto:eo238@njit.com">Contact</a>
             </p>
         </body>

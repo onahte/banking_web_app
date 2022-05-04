@@ -13,6 +13,7 @@ from app.transactions.forms import csv_upload
 from werkzeug.utils import secure_filename, redirect
 
 transactions = Blueprint('transactions', __name__, template_folder='templates')
+sum = 0
 
 @transactions.route('/transactions_browse', methods=['GET'], defaults={"page": 1})
 @transactions.route('/transactions_browse/<int:page>', methods=['GET'])
@@ -40,13 +41,14 @@ def transactions_upload():
         message = message_formatter()
         message += 'Uploaded:' + filename
         log.info(message)
-        #user = current_user
+
         list_of_transactions = []
         with open(filepath) as file:
-            csv_file = csv.DictReader(file)
+            fieldnames = ['Amount', 'Type']
+            csv_file = csv.DictReader(file, fieldnames=fieldnames)
+            next(csv_file)
             for row in csv_file:
-                list_of_transactions.append(Transactions(row['amount'],row['credit_debit']))
-
+                list_of_transactions.append(Transactions(row['Amount'],row['Type']))
         current_user.transactions = list_of_transactions
         db.session.commit()
 

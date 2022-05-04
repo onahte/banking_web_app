@@ -15,7 +15,7 @@
     {% endblock %}
 </head>
 <body>
-<div class="container">
+<div class="container c">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
     <div class="row">
         <header class="mb-2 type">
@@ -23,7 +23,7 @@
             {% from 'bootstrap5/utils.html' import render_messages %}
             {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
             <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-                <a class="navbar-brand ml-5">
+                <a class="navbar-brand ml-5" href="{{ url_for('simple_pages.index', page="index")}}">
                     <img src="{{ url_for('static', filename='images/bankofethan_horizontal.svg') }}" height="45" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,7 +32,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <div class="navbar-nav mr-auto">
-                        {{ render_nav_item('simple_pages.index', 'Home') }}
                         {% if current_user.is_authenticated %}
                             {{ render_nav_item('auth.dashboard','Dashboard' ) }}
                             {{ render_nav_item('auth.logs','Logs' ) }}
@@ -40,17 +39,13 @@
                                 {{ render_nav_item('auth.browse_users','User Management' ) }}
                             {% endif %}
                         {% endif %}
-                        {{ render_nav_item('simple_pages.about','About') }}
                     </div>
                 </div>
                 <div class="navbar-nav d-flex">
                     {% if current_user.is_authenticated %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{ url_for('static', filename='images/profile/'+ current_user.user_image ) }}"
-                                     height="35" class="rounded-circle"> My Account
-                            </a>
+                               data-bs-toggle="dropdown" aria-expanded="false">My Account</a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="{{ url_for("auth.edit_profile") }}">Manage
                                     Profile</a></li>
@@ -88,7 +83,7 @@
 {% endblock %}
 
 <footer class="text-center">
-    <p>&#169; Copyright: {{ year }} Ethan Oh &middot; <a href="mailto:eo238@njit.com">Contact</a></p>
+    <p class="t">&#169; Copyright: {{ year }} Ethan Oh &middot; <a href="mailto:eo238@njit.com">Contact</a></p>
 </footer>
 </body>
 </html>

@@ -1,4 +1,5 @@
 import os
+import secrets
 
 from flask import Blueprint, render_template, redirect, url_for, flash,current_app
 from flask_login import login_user, login_required, logout_user, current_user
@@ -77,12 +78,22 @@ def logout():
 def dashboard():
     return render_template('dashboard.html')
 
+def save_picture(form_picture):
+    random_hex = secrets.token_hex(8)
+    _, f_ext = os.path.splitext(form_picture.filename)
+    image =  random_hex + f_ext
+    image_path = os.path.join(config.Config.IMAGE_FOLDER, image)
+    form_picture.save(image_path)
+    return image
 
 @auth.route('/profile', methods=['POST', 'GET'])
 def edit_profile():
     user = User.query.get(current_user.get_id())
     form = profile_form(obj=user)
     if form.validate_on_submit():
+        if form.image.data:
+            pic = save_picture(form.image.data)
+            current_user.user_image = pic
         user.about = form.about.data
         #db.session.add(current_user)
         db.session.commit()
