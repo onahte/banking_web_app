@@ -13,7 +13,7 @@ from app.transactions.forms import csv_upload
 from werkzeug.utils import secure_filename, redirect
 
 transactions = Blueprint('transactions', __name__, template_folder='templates')
-sum = 0
+
 
 @transactions.route('/transactions_browse', methods=['GET'], defaults={"page": 1})
 @transactions.route('/transactions_browse/<int:page>', methods=['GET'])
@@ -26,6 +26,9 @@ def transactions_browse(page):
         return render_template('transactions_browse.html',data=data,pagination=pagination)
     except TemplateNotFound:
         abort(404)
+    except OperationalError:
+        flash('Database does not exist. Please upload a file.')
+        return render_template('upload.html', form=form)
 
 @transactions.route('/transactions_browse/upload', methods=['POST', 'GET'])
 @login_required
@@ -41,15 +44,22 @@ def transactions_upload():
         message = message_formatter()
         message += 'Uploaded:' + filename
         log.info(message)
-
+        balance = 0
+        temp_balance = 0
+        if not current_user.balance == None:
+            balance = float(current_user.balance)
         list_of_transactions = []
-        with open(filepath) as file:
-            fieldnames = ['Amount', 'Type']
+        with open(filepath, encoding='utf-8-sig', errors='ignore', newline='') as file:
+            fieldnames = ['Amount', 'Type', 'Balance']
             csv_file = csv.DictReader(file, fieldnames=fieldnames)
             next(csv_file)
             for row in csv_file:
                 list_of_transactions.append(Transactions(row['Amount'],row['Type']))
+                if not row['Amount'] == None:
+                    temp_balance += round(float(row['Amount']), 2)
         current_user.transactions = list_of_transactions
+        current_user.transactions.user_id = current_user.id
+        current_user.balance = str(balance + temp_balance)
         db.session.commit()
 
         return redirect(url_for('transactions.transactions_browse'))

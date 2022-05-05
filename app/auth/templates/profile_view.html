@@ -7,7 +7,7 @@
              <h2>User profile</h2>
                 User Email: {{ user.email }}
                 <p class="t">
-                    <img src="{{ url_for('static', filename='images/'+ current_user.user_image ) }}"
+                    <img src="{{ url_for('static', filename='images/profile/'+ current_user.user_image ) }}"
                     height="35" class="rounded-circle">
                     {{ current_user.email }}
                 </p>

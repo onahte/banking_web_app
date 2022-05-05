@@ -100,10 +100,10 @@
                 <p class="t">
                     <img src="{{ url_for('static', filename='images/profile/'+ current_user.user_image ) }}"
                                      height="35" class="rounded-circle">
-                    {{ current_user.email }} <br>
+                     {{ current_user.email }} <br>
                 </p>
                 <h5 class="type-header c">Balance:</h5>
-{#                 <p class="t">${{ current_user.get_balance() }}</p>#}
+                <p class="t">${{ current_user.balance }}</p>
 
             </div>
         </div>

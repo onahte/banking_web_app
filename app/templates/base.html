@@ -34,10 +34,8 @@
                     <div class="navbar-nav mr-auto">
                         {% if current_user.is_authenticated %}
                             {{ render_nav_item('auth.dashboard','Dashboard' ) }}
+                            {{ render_nav_item('transactions.transactions_browse', 'Transactions') }}
                             {{ render_nav_item('auth.logs','Logs' ) }}
-                            {% if current_user.is_admin %}
-                                {{ render_nav_item('auth.browse_users','User Management' ) }}
-                            {% endif %}
                         {% endif %}
                     </div>
                 </div>
@@ -51,8 +49,7 @@
                                     Profile</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage
                                     Account</a></li>
-                                <li><a class="dropdown-item" href="{{ url_for("transactions.transactions_browse") }}">Transactions</a>
-                                </li>
+
                                 {% if current_user.is_admin %}
                                     <li><a class="dropdown-item" href="{{ url_for("auth.browse_users") }}">User Mgmt</a>
                                     </li>

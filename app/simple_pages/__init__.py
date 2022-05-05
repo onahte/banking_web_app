@@ -4,7 +4,7 @@ from jinja2 import TemplateNotFound
 from flask_login import current_user
 from ..auth.forms import login_form, register_form, profile_form, security_form, user_edit_form
 from ..db import db
-from ..db.models import User
+from ..db.models import User, Transactions
 from ..auth import auth
 from logs import *
 
@@ -38,5 +38,3 @@ def index():
             flash("Welcome back!")
             return render_template('index.html')
     return render_template('main_login.html')
-
-
