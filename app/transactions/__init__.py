@@ -42,7 +42,7 @@ def transactions_upload():
         filepath = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
         form.file.data.save(filepath)
         message = message_formatter()
-        message += 'Uploaded:' + filename
+        message += '::Uploaded:' + filename
         log.info(message)
         balance = 0
         temp_balance = 0

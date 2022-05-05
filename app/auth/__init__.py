@@ -1,5 +1,6 @@
 import os
 import secrets
+import logging
 
 from PIL import Image
 from flask import Blueprint, render_template, redirect, url_for, flash,current_app
@@ -11,6 +12,7 @@ from .forms import login_form, register_form, profile_form, security_form, user_
 from app.db import db
 from app.db.models import User
 from app import config
+from app.logging_config import message_formatter
 
 auth = Blueprint('auth', __name__, template_folder='templates')
 
@@ -94,13 +96,23 @@ def save_picture(form_image):
 def edit_profile():
     user = User.query.get(current_user.get_id())
     form = profile_form(obj=user)
+    log = logging.getLogger('general')
     if form.validate_on_submit():
         if form.image.data:
+            temp = current_user.user_image
+            message = message_formatter()
+            message += '::Image file to be replaced:' + temp
+            log.info(message)
             pic = save_picture(form.image.data)
             current_user.user_image = pic
+            if not temp == 'default.png':
+                os.remove(os.path.join(config.Config.IMAGE_FOLDER,temp))
         user.about = form.about.data
         #db.session.add(current_user)
         db.session.commit()
+        message = message_formatter()
+        message += '::Profile pic updated:' + current_user.user_image
+        log.info(message)
         flash('You Successfully Updated your Profile', 'success')
         return redirect(url_for('auth.dashboard'))
     return render_template('profile_edit.html', form=form)
