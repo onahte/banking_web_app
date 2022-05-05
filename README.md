@@ -1,8 +1,8 @@
 # Banking Transaction Web App
 
-![Last Commit](https://img.shields.io/github/last-commit/onahte/final_flask_auth?style=plastic)
-![Pull Requests](https://img.shields.io/github/issues-pr/onahte/final_flask_auth?style=plastic)
-![Contributors](https://img.shields.io/github/contributors/onahte/final_flask_auth?style=plastic)
+![Last Commit](https://img.shields.io/github/last-commit/onahte/final_flask_auth?)
+![Pull Requests](https://img.shields.io/github/issues-pr/onahte/final_flask_auth?)
+![Contributors](https://img.shields.io/github/contributors/onahte/final_flask_auth?)
 ![Languages](https://img.shields.io/github/languages/count/onahte/final_flask_auth?) 
 ![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=onahte.final_flask_auth?style=plastic)
 
