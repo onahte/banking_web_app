@@ -11,14 +11,12 @@ from logs import *
 
 simple_pages = Blueprint('simple_pages', __name__, template_folder='templates')
 
-# @simple_pages.route('/about')
-# def about():
-#     if not current_user.is_authenticated:
-#         return render_template('main_login.html')
-#     try:
-#         return render_template('about.html')
-#     except TemplateNotFound:
-#         abort(404)
+@simple_pages.route('/main')
+def main():
+    if not current_user.is_authenticated:
+        return render_template('main_login.html')
+    return render_template('index.html')
+
 
 @simple_pages.route('/', methods=['POST', 'GET'])
 def index():
