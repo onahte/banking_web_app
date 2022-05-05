@@ -10,7 +10,7 @@ root = os.path.dirname(os.path.abspath(__file__))
 def test_create_logs():
     response = runner.invoke(create_logs)
     assert response.exit_code == 0
-    logdir = os.path.join(root, '../app/logs')
+    logdir = os.path.join(root, '../logs')
     response = os.path.exists(logdir)
     assert response == True
 
