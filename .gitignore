@@ -10,4 +10,4 @@ __pycache__
 logs
 uploads
 database
-profile
+app/static/images/profile
