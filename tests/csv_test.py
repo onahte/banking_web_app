@@ -39,20 +39,23 @@ def test_csv_processed(application):
         user = User('a@test.com', 'testtest', '100')
         db.session.add(user)
         list_of_transactions = []
+
         with open(test_file, encoding='utf-8-sig', errors='ignore', newline='') as file:
             fieldnames = ['Amount', 'Type']
             csv_file = csv.DictReader(file, fieldnames=fieldnames)
             next(csv_file)
             for row in csv_file:
                 list_of_transactions.append(Transactions(row['Amount'], row['Type']))
-        user.transactions = list_of_transactions
-        db.session.commit()
+            user.transactions = list_of_transactions
+            db.session.commit()
+
         # Tests CSV data was successfully loaded to db
         test_transaction = Transactions.query.filter_by(amount='9191').first()
         assert test_transaction.amount == 9191.0
         # Breaks down test user and confirms db is empty
         db.session.delete(user)
         assert db.session.query(User).count() == 0
+
 
 def test_balance_processed(application):
     '''Tests successful processing of CSV'''
@@ -66,6 +69,7 @@ def test_balance_processed(application):
         if not user.balance == None:
             balance = float(user.balance)
         list_of_transactions = []
+
         with open(test_file, encoding='utf-8-sig', errors='ignore', newline='') as file:
             fieldnames = ['Amount', 'Type']
             csv_file = csv.DictReader(file, fieldnames=fieldnames)
@@ -77,11 +81,13 @@ def test_balance_processed(application):
             user.transactions = list_of_transactions
             user.balance = balance + temp_balance
             db.session.commit()
+
         # Tests balance was successfully calculated
         assert user.balance == 100.0
         # Breaks down test user and confirms db is empty
         db.session.delete(user)
         assert db.session.query(User).count() == 0
+
     # Removes test csv
     os.remove(test_file)
     assert os.path.exists(test_file) == False
