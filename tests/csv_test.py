@@ -2,8 +2,6 @@
 import os
 import csv
 
-from babel.numbers import format_currency, parse_decimal
-
 from app import db
 from app.db.models import User, Transactions
 from app import create_app, db, config
@@ -66,7 +64,7 @@ def test_balance_processed(application):
         balance = 0.0
         temp_balance = 0.0
         if not user.balance == None:
-            balance = float(parse_decimal(user.balance, locale='en_US'))
+            balance = float(user.balance)
         list_of_transactions = []
         with open(test_file, encoding='utf-8-sig', errors='ignore', newline='') as file:
             fieldnames = ['Amount', 'Type']
@@ -77,11 +75,10 @@ def test_balance_processed(application):
                 if not row['Amount'] == None:
                     temp_balance += float(row['Amount'])
             user.transactions = list_of_transactions
-            user.transactions.user_id = user.id
-            user.balance = str(format_currency(balance + temp_balance, 'USD', locale='en_US'))
+            user.balance = balance + temp_balance
             db.session.commit()
         # Tests balance was successfully calculated
-        assert user.balance == '$100.00'
+        assert user.balance == 100.0
         # Breaks down test user and confirms db is empty
         db.session.delete(user)
         assert db.session.query(User).count() == 0

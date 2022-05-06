@@ -2,7 +2,6 @@ import csv
 import logging
 import os
 
-from babel.numbers import format_currency, parse_decimal
 from flask import Blueprint, render_template, abort, url_for,current_app, flash
 from flask_login import current_user, login_required
 from jinja2 import TemplateNotFound
@@ -48,7 +47,7 @@ def transactions_upload():
         balance = 0.0
         temp_balance = 0.0
         if not current_user.balance == None:
-            balance = float(parse_decimal(current_user.balance, locale='en_US'))
+            balance = float(current_user.balance)
         list_of_transactions = []
         with open(filepath, encoding='utf-8-sig', errors='ignore', newline='') as file:
             fieldnames = ['Amount', 'Type']
@@ -60,7 +59,7 @@ def transactions_upload():
                     temp_balance += float(row['Amount'])
         current_user.transactions = list_of_transactions
         current_user.transactions.user_id = current_user.id
-        current_user.balance = str(format_currency(balance + temp_balance, 'USD', locale='en_US'))
+        current_user.balance = balance + temp_balance
         db.session.commit()
 
         return redirect(url_for('transactions.transactions_browse'))

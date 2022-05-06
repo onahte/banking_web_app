@@ -103,7 +103,7 @@
                      {{ current_user.email }} <br>
                 </p>
                 <h5 class="type-header c">Balance:</h5>
-                <p class="t">{{ current_user.balance }}</p>
+                <p class="t">{{ '${:,.2f}'.format(current_user.balance) }}</p>
 
             </div>
         </div>
