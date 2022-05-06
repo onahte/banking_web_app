@@ -22,3 +22,9 @@ Logging library.
 
 * [Developmental Deployment](https://onahtefinal-dev.herokuapp.com/)
 
+# Added Features
+
+As per project requirement, a CSV file can be uploaded and viewed. A balance is calculated and is also viewable on both the main page and the dashboard. Additionally...
+* The web app also has a profile pic feature, where an uploaded image will be resized automatically.
+* The logs menu item will display all logging to the general.logs file.
+* Navigation has been reorganized so that the nav bar displays links for accessing app related actions and the My Account pull down only contains links for account related pages.
