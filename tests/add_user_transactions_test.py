@@ -68,3 +68,19 @@ def test_user_admin(application):
         # Test breakdown.
         db.session.delete(user)
         assert db.session.query(User).count() == 0
+
+def test_user_profile_pic(application):
+    '''Tests user's default profile pic is set'''
+    with application.app_context():
+        db.create_all()
+        # Confirm test case is empty
+        assert db.session.query(User).count() == 0
+        # Build test user
+        user = User('d@test.com', 'testtest', '100')
+        db.session.add(user)
+        db.session.commit()
+        # Test user profile image defaults to default.png
+        assert user.user_image == 'default.png'
+        # Test breakdown.
+        db.session.delete(user)
+        assert db.session.query(User).count() == 0
