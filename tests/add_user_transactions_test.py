@@ -5,12 +5,13 @@ from app.db.models import User, Transactions
 
 
 def test_adding_user(application):
+    '''Tests adding user'''
     with application.app_context():
         db.create_all()
         # Make sure test case is empty
         assert db.session.query(User).count() == 0
         # Build test user
-        user = User('a@test.com', 'testtest')
+        user = User('a@test.com', 'testtest', '100')
         db.session.add(user)
         # Confirm test user has been added
         assert db.session.query(User).count() == 1
@@ -23,12 +24,13 @@ def test_adding_user(application):
 
 
 def test_adding_transactions(application):
+    '''Tests adding transaction'''
     with application.app_context():
         db.create_all()
         # Confirm test case is empty
         assert db.session.query(User).count() == 0
         # Build test user
-        user = User('b@test.com', 'testtest')
+        user = User('b@test.com', 'testtest', '100')
         db.session.add(user)
         # Confirm test user has been added
         assert db.session.query(User).count() == 1
@@ -52,12 +54,13 @@ def test_adding_transactions(application):
 
 
 def test_user_admin(application):
+    '''Tests user first user added to db'''
     with application.app_context():
         db.create_all()
         # Confirm test case is empty
         assert db.session.query(User).count() == 0
         # Build test user
-        user = User('c@test.com', 'testtest')
+        user = User('c@test.com', 'testtest', '100')
         db.session.add(user)
         db.session.commit()
         # Test user id. Only user id 1 is admin.

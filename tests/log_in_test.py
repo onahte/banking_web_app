@@ -8,7 +8,7 @@ from app import db
 from app.db.models import User, Transactions
 
 
-user = User('abc@test.com', generate_password_hash('test1234'))
+user = User('abc@test.com', generate_password_hash('test1234'), '100')
 data = {'email': 'abc@test.com', 'password': 'test1234'}
 
 def test_no_main_menu_access(client):
@@ -39,8 +39,6 @@ def test_no_upload_access(client):
 
 def test_registration(client, application):
     '''Tests user registration'''
-    #Test starts assuming there is no user in db
-    assert db.session.query(User).count() == 0
     with application.app_context():
         response = client.post('/register', data=data, follow_redirects=True)
         assert response.status_code == 200
@@ -48,10 +46,11 @@ def test_registration(client, application):
         assert b"Login" in response.data
 
 
-def test_login_and_dashboard_access(client, application):
+def test_login_and_menu_link_access(client, application):
     '''Tests login and auto navigation to dashboard'''
     #Test user injected into db - this persists through rest of the testing in this file
     with application.app_context():
+        db.create_all()
         db.session.add(user)
         db.session.commit()
         assert db.session.query(User).count() == 1
@@ -60,23 +59,21 @@ def test_login_and_dashboard_access(client, application):
         #Successful registration routes to dashboard page
         assert b"Welcome" in response.data
         assert b"Dashboard" in response.data
+        assert b"Transactions" in response.data
+        assert b"Logs" in response.data
 
 
-def test_get_balance(client):
-    assert user.balance == '100'
 
-
-def test_loggedin_menu_link_access(client, application):
+def test_loggedin_dashboard_access(client, application):
     '''Tests access to menu links when logged in'''
     #Loads user for login - this persists through rest of testing in this file
     @application.login_manager.request_loader
     def load_user_from_request(request):
         return User.query.first()
-    response = client.post('/main', data=data, follow_redirects=True)
+    assert db.session.query(User).count() == 1
+    response = client.post('/dashboard')
     assert response.status_code == 200
     assert b"Dashboard" in response.data
-    assert b"Transactions" in response.data
-    assert b"Logs" in response.data
 
 
 def test_loggedin_upload_access(client):
@@ -86,11 +83,11 @@ def test_loggedin_upload_access(client):
     assert b"Upload" in response.data
 
 
-def test_loggedin_dashboard_access(client):
-    '''Tests access to dashboard page when logged in'''
-    response = client.get('/dashboard')
-    assert response.status_code == 200
-    assert b"Dashboard" in response.data
+# def test_loggedin_dashboard_access(client):
+#     '''Tests access to dashboard page when logged in'''
+#     response = client.get('/dashboard')
+#     assert response.status_code == 200
+#     assert b"Dashboard" in response.data
 
 
 def test_breakdown(client):

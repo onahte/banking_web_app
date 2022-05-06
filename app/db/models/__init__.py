@@ -36,10 +36,11 @@ class User(UserMixin, db.Model):
     is_admin = db.Column('is_admin', db.Boolean(), nullable=False, server_default='0')
     transactions = db.relationship("Transactions", back_populates="user", cascade="all, delete", lazy='dynamic')
 
-    def __init__(self, email, password):
+    def __init__(self, email, password, balance):
         self.email = email
         self.password = password
         self.registered_on = datetime.utcnow()
+        self.balance = balance
 
     def is_authenticated(self):
         return True

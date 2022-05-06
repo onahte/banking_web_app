@@ -36,7 +36,7 @@ def test_csv_processed(application):
     # Creates db and test user to associate w/ transactions db
     with application.app_context():
         db.create_all()
-        user = User('test@test.com', 'testtest')
+        user = User('test@test.com', 'testtest', '100')
         db.session.add(user)
         list_of_transactions = []
         with open(test_file, encoding='utf-8-sig', errors='ignore', newline='') as file:

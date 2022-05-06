@@ -1,7 +1,7 @@
 import logging
 
 from flask import Blueprint, render_template, abort, redirect, url_for, flash,current_app
-from flask_login import login_user
+from flask_login import login_user, login_required
 from jinja2 import TemplateNotFound
 from flask_login import current_user
 
