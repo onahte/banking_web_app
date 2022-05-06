@@ -48,7 +48,7 @@ def transactions_upload():
         balance = 0.0
         temp_balance = 0.0
         if not current_user.balance == None:
-            balance = parse_decimal(current_user.balance, locale='en_US')
+            balance = float(parse_decimal(current_user.balance, locale='en_US'))
         list_of_transactions = []
         with open(filepath, encoding='utf-8-sig', errors='ignore', newline='') as file:
             fieldnames = ['Amount', 'Type']
