@@ -12,12 +12,7 @@ def test_request_page_not_found(client):
     assert response.status_code == 404
 
 def test_request_index_page(client):
-    """Tests main page is inaccessible when not logged in"""
-    response = client.get("/main", follow_redirects=False)
-    assert response.status_code == 302
-
-def test_request_index_page_redirect(client):
-    '''Tests that unauthenticated users are redirected to Login page'''
-    response = client.get('/main', follow_redirects=True)
+    """Tests main page is inaccessible when not logged in and redirected to Login page"""
+    response = client.get("/main", follow_redirects=True)
     assert response.status_code == 200
     assert b"If you do not" in response.data
