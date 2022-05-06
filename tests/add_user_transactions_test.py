@@ -10,7 +10,7 @@ def test_adding_user(application):
         # Make sure test case is empty
         assert db.session.query(User).count() == 0
         # Build test user
-        user = User('a@test.com', 'testtest', '100')
+        user = User('a@test.com', 'testtest')
         db.session.add(user)
         # Confirm test user has been added
         assert db.session.query(User).count() == 1
@@ -28,7 +28,7 @@ def test_adding_transactions(application):
         # Confirm test case is empty
         assert db.session.query(User).count() == 0
         # Build test user
-        user = User('b@test.com', 'testtest', '100')
+        user = User('b@test.com', 'testtest')
         db.session.add(user)
         # Confirm test user has been added
         assert db.session.query(User).count() == 1
@@ -57,7 +57,7 @@ def test_user_admin(application):
         # Confirm test case is empty
         assert db.session.query(User).count() == 0
         # Build test user
-        user = User('c@test.com', 'testtest', '100')
+        user = User('c@test.com', 'testtest')
         db.session.add(user)
         db.session.commit()
         # Test user id. Only user id 1 is admin.

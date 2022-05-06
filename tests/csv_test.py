@@ -36,22 +36,20 @@ def test_csv_processed(application):
     # Creates db and test user to associate w/ transactions db
     with application.app_context():
         db.create_all()
-        user = User('test@test.com', 'testtest', '100')
+        user = User('test@test.com', 'testtest')
         db.session.add(user)
         list_of_transactions = []
-        with open(filepath, encoding='utf-8-sig', errors='ignore', newline='') as file:
+        with open(test_file, encoding='utf-8-sig', errors='ignore', newline='') as file:
             fieldnames = ['Amount', 'Type']
             csv_file = csv.DictReader(file, fieldnames=fieldnames)
             next(csv_file)
             for row in csv_file:
                 list_of_transactions.append(Transactions(row['Amount'], row['Type']))
-                if not row['Amount'] == None:
-                    temp_balance += float(row['Amount'])
         user.transactions = list_of_transactions
         db.session.commit()
         # Tests CSV data was successfully loaded to db
-        test_transaction = Transactions.query.filter_by(Amount='9191').first()
-        assert test_transaction.amount == '9191'
+        test_transaction = Transactions.query.filter_by(amount='9191').first()
+        assert test_transaction.amount == 9191.0
         # Breaks down test user and confirms db is empty
         db.session.delete(user)
         assert db.session.query(User).count() == 0

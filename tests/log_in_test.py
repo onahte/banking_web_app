@@ -8,8 +8,8 @@ from app import db
 from app.db.models import User, Transactions
 
 
-user = User('abc@test.com', generate_password_hash('test1234'), '100')
-data = {'email': 'abc@test.com', 'password': 'test1234', 'balance': '100'}
+user = User('abc@test.com', generate_password_hash('test1234'))
+data = {'email': 'abc@test.com', 'password': 'test1234'}
 
 def test_no_main_menu_access(client):
     """Calls the index page but will redirect to main login if not authenticated"""
