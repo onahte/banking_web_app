@@ -3,7 +3,7 @@ import os
 import csv
 
 from app import db
-from app.db.models import User, Song
+from app.db.models import User, Transactions
 from app import create_app, db, config
 
 BASE_DIR = config.Config.BASE_DIR
@@ -33,10 +33,10 @@ def test_upload_csv():
 
 def test_csv_processed(application):
     '''Tests successful processing of CSV'''
-    # Creates db and test user to associate w/ song db
+    # Creates db and test user to associate w/ transactions db
     with application.app_context():
         db.create_all()
-        user = User('test@test.com', 'testtest')
+        user = User('test@test.com', 'testtest', '100')
         db.session.add(user)
         list_of_transactions = []
         with open(filepath, encoding='utf-8-sig', errors='ignore', newline='') as file:

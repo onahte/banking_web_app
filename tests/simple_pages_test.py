@@ -16,6 +16,7 @@ def test_request_index_page(client):
     response = client.get("/main", follow_redirects=False)
     assert response.status_code == 302
 
+def test_request_index_page_redirect(client):
     '''Tests that unauthenticated users are redirected to Login page'''
     response = client.get('/main', follow_redirects=True)
     assert response.status_code == 200
